@@ -13,3 +13,5 @@ wheels/
 *.onnx
 *.onnx.json
 *.log
+*.lock
+
