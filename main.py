@@ -10,6 +10,7 @@ import numpy as np
 from piper import PiperVoice
 from sounddevice import OutputStream
 from websockets.asyncio.client import connect
+from websockets.exceptions import ConnectionClosed
 from filelock import FileLock
 
 class TTS:
@@ -101,7 +102,7 @@ async def main():
                                     tts_male.say(payload)
                             case _:
                                 print(f"Unknown message: {message}")
-            except ConnectionError as e:
+            except (ConnectionError, ConnectionClosed) as e:
                 print(f"Error: {e}")
             sleep(1.0)
 
