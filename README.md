@@ -5,6 +5,8 @@ Simple text-to-speech (TTS) server for FFXIV based on [Piper](https://github.com
 ## Installation
 
 - Install [`uv`](https://docs.astral.sh/uv/getting-started/installation/)
+- Install [CUDA 13.x](https://developer.nvidia.com/cuda-downloads)
+- Install [cuDNN 9.x](https://developer.nvidia.com/cudnn-downloads)
 - `uv run python -m piper.download_voices en_US-lessac-medium en_US-danny-low`
 - `uv run main.py`
 

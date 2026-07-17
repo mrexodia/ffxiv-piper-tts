@@ -1,3 +1,4 @@
+import cuda_setup  # noqa: F401  stages + preloads CUDA 13 / cuDNN 9 DLLs before ORT
 import json
 import asyncio
 import sys

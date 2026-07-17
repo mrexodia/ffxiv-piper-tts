@@ -3,11 +3,11 @@ name = "ffxiv-piper"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "filelock>=3.19.1",
-    "onnxruntime-gpu>=1.22.0",
-    "piper-tts>=1.3.0",
+    "onnxruntime-gpu>=1.27.0",
+    "piper-tts>=1.4.2",
     "sounddevice>=0.5.2",
     "websockets>=15.0.1",
 ]
